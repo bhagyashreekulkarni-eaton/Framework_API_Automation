@@ -21,6 +21,7 @@ packages/
 *.nupkg
 *.pdb
 # Visual Studio files
+.vs/
 .vscode/
 *.user
 *.suo
