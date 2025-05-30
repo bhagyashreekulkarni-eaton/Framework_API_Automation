@@ -3,8 +3,6 @@
   <Import Project="..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props')" />
   <Import Project="..\packages\xunit.runner.console.2.9.3\build\xunit.runner.console.props" Condition="Exists('..\packages\xunit.runner.console.2.9.3\build\xunit.runner.console.props')" />
   <Import Project="..\packages\xunit.runner.visualstudio.3.1.0\build\net472\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.3.1.0\build\net472\xunit.runner.visualstudio.props')" />
-  <Import Project="..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.props" Condition="Exists('..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.props')" />
-  <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" />
   <Import Project="..\packages\xunit.core.2.9.3\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.9.3\build\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -109,9 +107,6 @@
     <Reference Include="RazorEngine.NetCore, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
       <HintPath>..\packages\RazorEngine.NetCore.nixFix.1.0.1\lib\netstandard2.0\RazorEngine.NetCore.dll</HintPath>
     </Reference>
-    <Reference Include="SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecFlow.Internal.Json.1.0.8\lib\net45\SpecFlow.Internal.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -186,12 +181,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecFlow.3.9.74\lib\net461\TechTalk.SpecFlow.dll</HintPath>
-    </Reference>
-    <Reference Include="TechTalk.SpecFlow.xUnit.SpecFlowPlugin, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecFlow.xUnit.3.9.74\lib\net461\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll</HintPath>
-    </Reference>
     <Reference Include="Validation, Version=2.4.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
       <HintPath>..\packages\Validation.2.4.18\lib\net45\Validation.dll</HintPath>
     </Reference>
@@ -249,11 +238,7 @@
     <Error Condition="!Exists('..\packages\Microsoft.Playwright.1.52.0\build\Microsoft.Playwright.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Playwright.1.52.0\build\Microsoft.Playwright.targets'))" />
     <Error Condition="!Exists('..\packages\xunit.core.2.9.3\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.9.3\build\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\xunit.core.2.9.3\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.9.3\build\xunit.core.targets'))" />
-    <Error Condition="!Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.3.9.74\build\SpecFlow.targets'))" />
-    <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props'))" />
-    <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets'))" />
-    <Error Condition="!Exists('..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.props'))" />
-    <Error Condition="!Exists('..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.targets'))" />
+    
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.3.1.0\build\net472\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.3.1.0\build\net472\xunit.runner.visualstudio.props'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.console.2.9.3\build\xunit.runner.console.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.console.2.9.3\build\xunit.runner.console.props'))" />
     <Error Condition="!Exists('..\packages\AspectInjector.2.8.1\build\netstandard2.0\AspectInjector.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AspectInjector.2.8.1\build\netstandard2.0\AspectInjector.targets'))" />
@@ -261,9 +246,6 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets'))" />
   </Target>
   <Import Project="..\packages\xunit.core.2.9.3\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.9.3\build\xunit.core.targets')" />
-  <Import Project="..\packages\SpecFlow.3.9.74\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" />
-  <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
-  <Import Project="..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.targets" Condition="Exists('..\packages\SpecFlow.xUnit.3.9.74\build\SpecFlow.xUnit.targets')" />
   <Import Project="..\packages\AspectInjector.2.8.1\build\netstandard2.0\AspectInjector.targets" Condition="Exists('..\packages\AspectInjector.2.8.1\build\netstandard2.0\AspectInjector.targets')" />
   <Import Project="..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets" Condition="Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets')" />
 </Project>
