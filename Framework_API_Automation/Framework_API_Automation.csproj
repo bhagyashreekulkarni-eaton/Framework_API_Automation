@@ -109,15 +109,6 @@
     <Reference Include="RazorEngine.NetCore, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
       <HintPath>..\packages\RazorEngine.NetCore.nixFix.1.0.1\lib\netstandard2.0\RazorEngine.NetCore.dll</HintPath>
     </Reference>
-    <Reference Include="Reqnroll, Version=2.0.0.0, Culture=neutral, PublicKeyToken=611ce36403091019, processorArchitecture=MSIL">
-      <HintPath>..\packages\Reqnroll.2.4.1\lib\netstandard2.0\Reqnroll.dll</HintPath>
-    </Reference>
-    <Reference Include="Reqnroll.xUnit.ReqnrollPlugin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=611ce36403091019, processorArchitecture=MSIL">
-      <HintPath>..\packages\Reqnroll.xUnit.2.4.1\lib\net462\Reqnroll.xUnit.ReqnrollPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.112.1.0\lib\net48\RestSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
