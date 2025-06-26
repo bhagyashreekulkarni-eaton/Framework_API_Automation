@@ -1,0 +1,10 @@
+﻿{
+  "data": {
+    "createNewUser": {
+      "id": 1,
+      "newUser": null,
+      "errorMessage": "A user with the email address 'lokeshrsontakke@eaton.com' already exists.",
+      "__typename": "CreateNewUserResult"
+    }
+  }
+}

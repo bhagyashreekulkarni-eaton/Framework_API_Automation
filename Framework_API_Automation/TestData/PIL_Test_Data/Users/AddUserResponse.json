@@ -1,0 +1,13 @@
+﻿{
+  "data": {
+    "createNewUser": {
+      "id": 74,
+      "newUser": {
+        "id": 74,
+        "__typename": "User"
+      },
+      "errorMessage": null,
+      "__typename": "CreateNewUserResult"
+    }
+  }
+}
