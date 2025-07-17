@@ -37,22 +37,37 @@ namespace Framework_API_Automation.Utilities.Reporting
             _extent.AddSystemInfo("User", Environment.UserName);
         }
 
-        private static string FindTestResultsPath()
-        {
-            var dir = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
-            while (dir != null)
-            {
-                var potentialPath = Path.Combine(dir.FullName, "Framework_API_Automation", "TestResults");
-                if (Directory.Exists(Path.Combine(dir.FullName, "Framework_API_Automation")) &&
-                    Directory.Exists(potentialPath))
-                {
-                    return potentialPath;
-                }
-                dir = dir.Parent;
-            }
+        //private static string FindTestResultsPath()
+        //{
+        //    var dir = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+        //    while (dir != null)
+        //    {
+        //        var potentialPath = Path.Combine(dir.FullName, "Framework_API_Automation", "TestResults");
+        //        if (Directory.Exists(Path.Combine(dir.FullName, "Framework_API_Automation")) &&
+        //            Directory.Exists(potentialPath))
+        //        {
+        //            return potentialPath;
+        //        }
+        //        dir = dir.Parent;
+        //    }
 
-            throw new DirectoryNotFoundException("Could not locate Framework_API_Automation\\TestResults folder.");
+        //    throw new DirectoryNotFoundException("Could not locate Framework_API_Automation\\TestResults folder.");
+        //}
+
+
+        public static string FindTestResultsPath()
+        {
+            // Go up two directories from bin\Debug (or bin\Release) to reach the project root
+            var projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
+            var resultsPath = Path.Combine(projectRoot, "APITestResults");
+
+            // Ensure the directory exists
+            Directory.CreateDirectory(resultsPath);
+
+            return resultsPath;
+            throw new DirectoryNotFoundException("Could not locate\\APITestResults folder.");
         }
+       
 
         private static readonly object _lock = new object();
 
