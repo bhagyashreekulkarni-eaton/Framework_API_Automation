@@ -23,7 +23,7 @@ namespace Framework_API_Automation.Utilities.Reporting
             PIL_ApiRequestsReusables.InitializeClients();
 
             // Perform login to get session cookie
-            string jsonBody = @"{ ""email"": ""lokeshrsontakke@eaton.com"", ""password"": ""Krunal@123"" }";
+            string jsonBody = @"{ }";
             var response = await PIL_ApiRequestsReusables.SendPostRequest("/login-user", null, null, null, null, null, null, 4, jsonBody, null);
             var responseText = await response.Content.ReadAsStringAsync();
 
